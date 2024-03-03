@@ -1,0 +1,165 @@
+<head></head>
+<div></div>red
+<div id="mo_ta">hello</div>
+<div class="thong_tin">Xin chào</div>
+<div id="one">One</div>
+<div id="two">two</div><!--
+<div id="three">three/div>-->
+    <span id="one">One</span>
+<span id="two">two</div>
+<div id="three">three/div>
+<style>
+#mo_ta {
+    font-fontf:15px;px
+    color: red;
+}
+.thong_tin{
+    font-size: 15px;
+    color:aquamarine;
+}
+#one{
+    display:inline-block;
+    background-color: aqua;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: red;
+    width:50px;
+    box-sizing: content-box; border-box;
+    <!--tạo block, mỗi phàn tử set cho background-color tiện theo dõi, đổi thẻ div sáng span cho liền nhau, có khoảng trắng thì tạo <1-- -->cho liền nhau để dễ theo dõi, padding làm phình to phần tử độ đo ok set dược màu, có nhiều đơn vị đo cm, mm..., border-style: kiểu đường, mặc định phần tử hok có đường viền, 5px -style kiểu đường viền, solid là nét gạch thì none là không có gì, -width:2px tăng viền lên, -color:màu cho viền, margin là khoảng cách phần tử đó, trên dưới trái phải tuỳ chọn, khối hộp phụ thuộc nội dung nhưng cũng có thẻ set cho no bằng width, display:inline (nó sẽ bị ngắt dòng các phần tử khác, có thể kết hợp inline và block sẽ hok bị ngắt dòng nhưng vẫn có chiều dài mong muốn)-->
+box-sizing: mặc định content-box, hok thieté lập gì, border-box lấy cả lấy thuộc tính width là content, làm dầy bodrder lên thì cũng ho ảnh hưởng content
+content có text văn bản thô, các elemt khác, mỗi kiểu element phụ vụ cho các mục đích riêng, color: thiết lập màu điền viền cho block, fornt-style:mặc định normal, đậm bold;hoặc italic, font-weight:bold;
+Thực tế 1 trang văn bản có nhiều các nhiều elemt khác nữa, có nhiều thì phatsinh quản lý,
+tìm hiểu các layout, nếu hok có css thì chúng ta có thể dàn bố cục của trang web bằng table
+đổi hết span về div
+}
+
+#two{
+    background-color: antiquewhite;
+    margin-right: 4px;
+}
+#three{
+    background-color: bisque;
+}
+
+</style>
+<div class="container">
+<div>one</div>
+<div>two</div>
+<div>three</div>
+</div>
+<style>
+.container{
+    display:flex; có inline block, block....kiểu hiện thị dặc biệt, các phần tử mặc dù là div là ngắt dòng nhưng khi đưa vào flex box, xếp các phần tử trong đó thành hàng dọc luôn 
+    backgound-color: pink;
+    flex-direction: row; colum (hàng dọc)để trở về hàng dọc
+    justify-content: center; space-between;
+    dàn tạo bố cục 2 cơ chế cơ bản: dàn theo bề ngang horizontal arrangement dàn trái dàn phải, các phần tử dòn hết sáng trái, flex-end dồn cuối, center dàn giữ, space-between rải đều lên flex box, tăng chiều dài, align-items:center;flex-end; nomal; flex-start
+    chiều dọc:vertical arrangement
+    align-items:flex-end;center;
+    hight:50px;
+
+}
+.container > div{ selecter combine select kết hợp 3 cái div(select  các thẻ div con của container chứ hok select vào container
+    background-color: bisque;
+    margin:2px;
+}
+</style>
+
+cách để hiện thị các phần tử html rõ ràng, cấu trục hiện thị lên sao cho đẹp
+
+
+-----------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Học CSS cùng Code Dạo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A demonstration of what can be accomplished visually through CSS-based design."
+    />
+    <meta name="robots" content="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="top">
+        <h1>Học CSS cùng Code Dạo</h1>
+        <p>Biến trang web tởm lợm thành web cute dễ xương cùng CSS.</p>
+      </div>
+
+      <div class="wrapper">
+        <div id="main">
+          <h1>Giới thiệu trang web StackOverflow</h1>
+          <p>
+            Stack Overflow: Câu chuyện "hài hước lãng mạn không kém phần kịch
+            liệt" tập trung vào nam sinh đại học Kazushi Sudou và các cô bạn thơ
+            ấu của mình là chị em Shirakwa:<br />
+            <a href="#">Tập 1</a>, <a href="#">Tập 2</a>, <a href="#">Tập 3</a>,
+            <a href="#">Tập 4</a>.
+            <img src="https://i.imgur.com/uT5dwmD.jpg" />
+          </p>
+
+          <h2>Trang web tương tự</h2>
+          <p>
+            Tìm các web tương tự cùng hãng với từ khoá:
+            <span class="keyword"
+              >Vanilla, NTR, Cotton Doll, Dứa Hồng, TRex, Mèo Đen</span
+            >.<br />
+            Xem thêm tại: <a href="#">GithubZ</a>.
+          </p>
+        </div>
+
+        <div id="sidebar">
+          <h3>Giới thiệu GithubZ</h3>
+          <p>
+            Ghé thăm <a href="#">GithubZ</a> để xem các repo mới và hot cập nhật
+            mỗi ngày. <br />
+            Code JP, US, UK Vietsub - Xem Code hay 18+ không che.
+
+            <img src="https://i.imgur.com/iZFbc6V.jpg" />
+          </p>
+        </div>
+      </div>
+
+      <div id="bottom">
+        Bản quyền thuộc về GithubZ - 2021.
+      </div>
+    </div>
+  </body>
+</html>
+
+chọn css phần tử nào, chọn id nào, class nào để add css vào
+chọn <style>
+    </style> cho <h1> đều màu đỏ</h1>
+
+    1 selector (chọn phần tử)có thể là 1 thẻ htlm
+    có thể định dạng và style cho nó, nó thể là 1 thẻ p, div, span
+    property là thuộc tính của html, có thể là color, backgroup-color
+    value: là giá trị
+
+có 3 cách để áp thuộc tính css cho html
+cách 1 là inline: viêt trực tiếp vào thẻ html thông qua attribute style
+cách 2 là internal: viết css vào tỏng thẻ <style>
+cách 3 là external: viết css vào file.css, viết tốt nhất nếu viết cho trnag lơn
+
+<head>
+    <style><!--các phần tử giống nhau chỉ cần làm 1 lần-->
+        p{
+            background-color: pink; color: green;
+        }
+        </style>
+    </head>
+<body style="background-color: green;">
+    <h1 style="color: red;"> Xin chào</h1>
+    <p style="background-color: pink; color: green"> xin chào mọi người</p>
+
+    cách 3: <link rel="stylesheet" href="style.css">
+
+    dòng 2,4 muốn

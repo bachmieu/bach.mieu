@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trang Web cá nhân của tôi</title>
+    <meta charset="UTF-8">
+    <meta name="Home Description" content="Home_mô tả tóm tắt web của bạn ở đây"> 
+    <meta name="keywords" content="keywords của web của bạn đưa vào đây">
+    <mate name="author" content="tên tác giả hoặc nhóm tác giả viết web này">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+    <ul>
+      <li>Đỏng đảnh</li>
+      <li>Nói nhiều</li>
+      <li>Cái tôi cao</li>
+      <ol>
+      <li>Thích 1 mình</li>
+      <li>Kiên định ý kiên riêng</li>
+    </ol>
+    </ul>
+
+<br>
+  <!--  <iframe width="100%" src="https://www.bing.com/"></iframe> nhúng 1 trang khác vào trang web của mì<nh--></nh-->
+    <iframe ></iframe>
+
+<table bgcolor="black">
+<tr bgcolor="grey">
+  <th>STT</th>
+  <th>họ và tên</th>
+  <th>số điẹn thoại</th>
+</tr>
+<tr bgcolor="green">
+  <td>01</td>
+  <td>Nguyễn Văn A</td>
+  <td>023445666</td>
+</tr>
+</table>
+    
+    <h1>Lấy thông tin người dùng:</h1>
+    
+    <form>
+      <div>
+        <labe>Điền thông tin của bạn:</labe>
+        <input type="text" placeholder="Tên của bạn"/>
+        
+        <select>
+          <option>Nữ</option>
+          <option>Nam</option>
+          <option>Unisex</option>
+        </select>
+      </div>
+      <div>
+        <label>Bạn có người yêu chưa?</label>
+        <input type="radio" name="Người yêu"> Chưa có
+        <input type='radio' name="Người yêu"> Có rồi
+      </div>
+
+  <button onclick="changeText()" style="border-top: 5px; background-color: blueviolet;">
+    Nhấn vào đây
+  </button>
+  <h2 id="h2id">Xin chào</h2>
+  <script>
+    ChangeText=()=>{
+      document.getElementById("h2id").innerHTML="bye bye";
+    }
+  </script> <!--getElementById sẽ tìm cái id là h2id để thay thế cái element cũ-->
+    </form>
+
+
+    
+<br>
+    <!--dùng _self: mặc định, chuyển sang 1 tab khác _blank-->
+    <a href="https://vietnamnet.vn/" target="_blank">Tin tức</a>
+
+ <br>
+    <a href="../HT&CNWEB/Page_2/index_2.html">Page2</a>
+
+    <br>
+    <a href="mailto:...@gmail.com"></a>
+
+    <h3>
+      Hãy đặt câu hỏi cho tôi!
+    </h3>
+    <form>
+      <input type="text" palceholder="Điền câu hỏi của bạn"/>
+      <button>Gửi câu hỏi</button>
+    </form>
+    <video src="Video/2055346060994646304.mp4" style="min-width: 10%;"></video>
+    <footer>
+      <h3>
+      Thông tin liên hệ:
+      </h3>
+      <ul>
+        <li>Email: hoai@gmail.com</li>
+        <li>Facebook: <a href="https://www.facebook.com/tieubachdangyeu"> Facebook của tôi</a></li>
+        <li>Số điện thoại liên hệ: 0812996995</li>
+      </ul>
+    </footer>
+  </body>
+</html>
